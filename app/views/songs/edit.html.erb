@@ -18,10 +18,7 @@
   <div class="field<%= ' field_with_errors' if @song.errors[:artist_name].any? %>">
     <%= label_tag "artist_name", "Artist Name" %>
     <%= text_field_tag "artist_name", @song.artist_name %>
-    <p>
-      Please type carefully as our top scientists are working around the clock to
-      enable state-of-the-art dropdown technology for this form field.
-    </p>
+
   </div>
 
   <div class="field<%= ' field_with_errors' if @song.errors[:content].any? %>">
