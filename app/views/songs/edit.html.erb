@@ -11,8 +11,8 @@
     </div>
   <% end %>
   <div class="field<%= ' field_with_errors' if @song.errors[:title].any? %>">
-    <%= label_tag "title", "Title" %>
-    <%= text_field_tag "title", @song.title %>
+    <%= label_tag "song_title", "song_title" %>
+    <%= text_field_tag "song_title", @song.title %>
   </div>
 
   <div class="field<%= ' field_with_errors' if @song.errors[:artist_name].any? %>">
