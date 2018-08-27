@@ -19,10 +19,10 @@
     <%= label_tag "artist_name", "Artist Name" %>
     <%= text_field_tag "artist_name", @song.artist_name %>
   </div>
-  
+
   <div class="field<%= ' field_with_errors' if @song.errors[:release_year].any? %>">
-    <%= label_tag "artist_name", "Artist Name" %>
-    <%= text_field_tag "artist_name", @song.artist_name %>
+    <%= label_tag "release_year", "Artist Name" %>
+    <%= text_field_tag "release_year", @song.release_year.to_s %>
   </div>
 
   <%= submit_tag "Update" %>
