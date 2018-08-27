@@ -2,9 +2,9 @@
   <% if @song.errors.any? %>
     <div id="error_explanation">
       <h2>There were some errors:</h2>
-        <% @song.errors.full_messages.each do |message| %>
+      <% @song.errors.full_messages.each do |message| %>
           <li><%= message %></li>
-        <% end %>
+      <% end %>
     </div>
   <% end %>
   <div class="field">
