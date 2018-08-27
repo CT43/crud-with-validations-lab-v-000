@@ -1,10 +1,8 @@
 <h1><%= @song.title %></h1>
 <%= @song.artist_name %>
 <% if @song.released? %>
-  <p>
     Released in
   <%= @song.release_year %>
-  </p>
 <% end %>
 
 <p>
